@@ -62,14 +62,14 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
-      required_version = ">=1.7.5" 
+      required_version:">=1.7.5"
         
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     
     - name: Initialize Terraform
       run: terraform init
-        working-directory: terraform
+      working-directory: terraform
 
     - name: Plan Terraform
       run: terraform plan
