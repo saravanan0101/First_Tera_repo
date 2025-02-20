@@ -5,6 +5,6 @@ resource "aws_instance" "vm1" {
    tags = {
     Name = "Amazon_AMI123"
    }
-                     
+
 }
 
